@@ -1,0 +1,586 @@
+@font-face{
+    font-family: 'Reem Kufi';
+    src: url(Assets/font/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: 100%;
+    background-color: #f3f3f3;
+}
+
+p{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.logo{
+    padding: 10px 20px;
+}
+
+.logo a{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo h1{
+    margin: 0;
+}
+
+.wheel{
+    text-decoration: none;
+    color: #f3f3f3;
+    font-family: 'Reem Kufi';
+}
+
+.hub{
+    text-decoration: none;
+    color: #5353bd;
+    font-family: 'Reem Kufi';
+}
+
+.logo h1{
+    width: 100%;
+
+}
+
+nav{
+    background-color: black;
+    position: relative;
+}
+
+nav .navbar{
+    display: flex;
+}
+
+.navbar div:last-child{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+    width: fit-content;
+}
+
+.navbar-register{
+    padding-right: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-register:hover .register-dropdown{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: -95px;
+    right: 0;
+    background-color: black;
+    z-index: 1;
+    padding: 10px;
+}
+
+.navbar-register:hover .dropdown-items{
+    text-decoration: none;
+    color: #f3f3f3;
+    padding: 10px ;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: #f3f3f3;
+    transition: ease-out 0.3s;
+    font-weight: bolder;
+}
+
+.dropdown-items{
+    display: none;
+}
+
+.navbar-register:hover .dropdown-items:hover{
+    color: #5353bd;
+}
+
+.register-dropdown{
+    display: none;
+    transition: 0.3s ease;
+    position: absolute;
+}
+
+.navbar-register svg{
+    fill: #f3f3f3;
+    transition: 0.3s ease;
+    width: 20px;
+    height: 20px;
+}
+
+.navbar-register:hover svg{
+    fill: #5353bd;
+}
+
+.navbar div:not(:last-child){
+    text-align: center;
+    width: 134px;
+    height: 59px;
+    transition: ease-out 0.15s;
+}
+
+.navbar div:not(:last-child):hover{
+    background-color: black;
+    color: #f3f3f3;
+    border-bottom: solid 3px #f3f3f3 ;
+    box-sizing: border-box;
+}
+
+
+
+.navbar div:not(:last-child):hover a{
+    color: #5353bd
+}
+
+nav a{
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 15px;
+    transition: ease-out 0.3s;
+}
+
+.navbar-burger{
+    display: none;
+}
+
+.sec1{
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.sec1::before{
+    background-image: url(Assets/Extra/eugene-tkachenko-dZbDdqSXj1I-unsplash.jpg);
+    background-size: cover;
+    content:'';
+    position: absolute;
+    inset: 0;
+    opacity: 0.4;
+    height: 100%;
+}
+
+.signIn{
+    
+    background-color: rgb(243, 243, 243);
+    width: 500px;
+    padding: 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 30px; */
+    position: relative;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    gap: 20px;
+}
+
+.h1Login{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+
+}
+
+.formEmail{
+
+    display: flex;
+    font-size: medium;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    border: solid 1px rgb(172, 172, 172);
+    height: 50px;
+    width: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+
+}
+
+.formPassword{
+
+    display: flex;
+    font-size: medium;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    border: solid 1px rgb(172, 172, 172);
+    height: 50px;
+    width: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+
+.h4Forgot{
+
+    display: flex;
+    text-decoration: underline;
+    color: rgb(124, 124, 124);
+    font-weight: 400;
+    margin: 0;
+    font-size: 15px;
+
+}
+
+.btnLogin{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    color: #f3f3f3;
+    background-color: rgb(83, 83, 189);
+    font-weight: 700;
+    font-size: 18px;
+    border: solid 2px rgb(83, 83, 189);
+}
+
+.btnLogin:hover{
+    color: rgb(83, 83, 189);
+    background-color: #f3f3f3;
+    border: solid 2px rgb(83, 83, 189);
+}
+
+.h4Signup{
+
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    color: rgb(124, 124, 124);
+    font-weight: 400;
+    margin: 0;
+    font-size: 18px;
+
+}
+
+.form-div{
+    width: 100%;
+}
+
+.error-message{
+   text-align: left;
+    display: flex;
+    width: 100%;
+    color: red;
+    font-size: 15px;
+}
+
+@media (max-width:1040px){ 
+    .signIn{
+        width: 450px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        height: 350px;
+    }
+
+    .h1Login{
+        font-size: 40px;
+    }
+
+    .formEmail{
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .formPassword{
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .h4Forgot{
+        font-size: 14px;
+        
+    }
+
+    .btnLogin{
+        font-size: 15px;
+    }
+
+    .h4Signup{
+        font-size: 15px;
+    }
+
+    .error-message{
+         font-size: 14px;
+     }
+}
+
+@media (max-width: 768px){
+    nav .navbar{
+        display: none;
+    }
+
+    .navbar-burger{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        position: relative;
+    }
+    
+    .navbar-burger svg{
+        fill: #f3f3f3;
+        transition: 0.3s ease;
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+    }
+    
+    .navbar-burger .burger-dropdown{
+        background-color: black;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        z-index: 1;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        animation-name: fade-in;
+        animation-duration: 0.3s;
+    }
+    .navbar-burger .show-dropdown{
+        display: flex;
+    }
+    .burger-dropdown{
+       display: none;
+    }
+    
+    @keyframes fade-in{
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+    
+    .burger-dropdown a{
+        font-size: 16px;
+        font-weight: bolder;
+        padding: 15px;
+        transition: 0.3s ease;
+    }
+    
+    .burger-dropdown a:hover{
+        background-color: #5353bd;
+    }
+    
+    .line{
+        height: 1px;
+        background-color: #f3f3f3;
+        margin: 10px;
+    }
+
+    .signIn{
+        width: 450px;
+    }
+
+    .h1Login{
+        font-size: 35px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        height: 350px;
+    }
+
+    .formEmail{
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .formPassword{
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .h4Forgot{
+        font-size: 14px;
+        
+    }
+
+    .btnLogin{
+        font-size: 15px;
+    }
+
+    .h4Signup{
+        font-size: 15px;
+    }
+
+    .error-message{
+         font-size: 14px;
+     }
+
+}
+
+@media (max-width:428px){
+    nav .navbar{
+        display: none;
+    }
+ 
+    .navbar-burger{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        position: relative;
+    }
+    
+    .navbar-burger svg{
+        fill: #f3f3f3;
+        transition: 0.3s ease;
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+    }
+    
+    .navbar-burger .burger-dropdown{
+        background-color: black;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        z-index: 1;
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        animation-name: fade-in;
+        animation-duration: 0.3s;
+    }
+    .navbar-burger .show-dropdown{
+        display: flex;
+    }
+    .burger-dropdown{
+       display: none;
+    }
+    
+    @keyframes fade-in{
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+    
+    .burger-dropdown a{
+        font-size: 15px;
+        font-weight: bolder;
+        padding: 15px 10px;
+        transition: 0.3s ease;
+    }
+    
+    .burger-dropdown a:hover{
+        background-color: #5353bd;
+    }
+    
+    .line{
+        height: 1px;
+        background-color: #f3f3f3;
+        margin: 10px;
+    }
+
+    .sec1{
+        height: 100%;
+    }
+
+    .sec1::before{
+        background-color: #f3f3f3;
+    }
+
+    .signIn{
+        width: 100%;
+    }
+
+    .h1Login{
+        font-size: 30px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .formEmail{
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .formPassword{
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .h4Forgot{
+        font-size: 14px;
+        
+    }
+
+    .btnLogin{
+        font-size: 15px;
+        height: 40px;
+        padding: 0px;
+    }
+
+    .h4Signup{
+        font-size: 15px;
+        
+    }
+
+    .error-message{
+         font-size: 14px;
+     }
+
+}
+

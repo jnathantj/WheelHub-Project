@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | WheelHub</title>
+    <link rel="stylesheet" href="loginPage.css">
+
+</head>
+<body>
+    <header class="logo">
+        <a href="Home.html">
+            <h1 class="wheel">Wheel</h1>
+            <h1 class="hub">Hub</h1>
+        </a>
+    </header>
+
+    <nav>
+        <div class="navbar">
+            <div><a href="Home.html">
+                    <h3>Home</h3>
+                </a></div>
+            <div><a href="Promotion.html">
+                    <h3>Promotion</h3>
+                </a></div>
+            
+            <div><a href="AllCars.html">
+                    <h3>All Cars</h3>
+                </a></div>
+            <div><a href="AboutUs.html">
+                    <h3>About Us</h3>
+                </a></div>
+            <div class="navbar-register">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path  d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                <div class="register-dropdown">
+                    <a href="loginPage.html" class="dropdown-items">Log In</a>
+                    <a href="registerPage.html" class="dropdown-items">Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-burger">
+            <div class="burger-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="burger-button"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+
+                <div class="burger-dropdown" id="dropdwn">
+                    <a href="Home.html">Home</a>
+                    <a href="Promotion.html">Promotion</a>
+                    <a href="AllCars.html">All Cars</a>
+                    <a href="AboutUs.html">About Us</a>
+                    <div class="line"></div>
+                    <a href="loginPage.html">Log In</a>
+                    <a href="registerPage.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav> 
+
+
+    <section class="sec1">
+        <div class="signIn">
+            <h1 class="h1Login">Login</h1>
+            <form action="Home.html" onsubmit= "return false">
+                <div class="form-login">
+                    <div class="form-div">
+                        <input class="formEmail" type="text" name="" id="emailform" placeholder="E-mail">
+                        <div id="erroremail" class="error-message"></div>
+                    </div>
+
+                    <div class="form-div">
+                        <input class="formPassword" type="password" name="" id="passwordform"  placeholder="Password">
+                        <div id="errorpass" class="error-message"></div>
+                    </div>
+
+                    <h4 class="h4Forgot">Forgot your password?</h4>
+                </div> 
+                <button class="btnLogin" onclick="valid()">Login</button>
+                <a href="registerPage.html"><h4 class="h4Signup">Sign Up</h4></a>
+            </form>
+        </div>
+    </section>
+    
+</body>
+<script src="login.js"></script>
+</html>
